@@ -9,7 +9,7 @@ body {
 }
 
 .list {
-    padding-top: 50%;
+    margin-top: 50%;
 }
 
 .submit input[type=text] {
@@ -17,8 +17,20 @@ body {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
-    background: #f1f1f1;
-    border-radius: .75rem;
+    max-width: 80%;
+    border-radius: .75rem 0 0 .75rem;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+
+
+.submit button[type=submit] {
+    padding: .5rem;
+    /* float: right; */
+    cursor: pointer;
 }
 
